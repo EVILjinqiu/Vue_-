@@ -1,13 +1,17 @@
 <template>
-  <div id="app">
+  <div>
     <router-view></router-view>
-   <FooterGuide></FooterGuide>
+    <FooterGuide v-show="$route.meta.showFooter"/>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import FooterGuide from './components/FooterGuide/FooterGuide'
+  import FooterGuide from 'components/FooterGuide/FooterGuide.vue'
   export default {
+
+    mounted() {
+      this.$store.dispatch('getAddress')
+    },
     components: {
       FooterGuide
     }
@@ -15,6 +19,6 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  
+
  
 </style>

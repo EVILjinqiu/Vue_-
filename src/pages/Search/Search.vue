@@ -16,7 +16,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import '../../common/stylus/mixins.styl'
-  .search  
+  .search  //搜索
     width 100%
     .search_form
       clearFix()
@@ -44,6 +44,4 @@
           color #fff
           background-color #02a774
         
-
- 
 </style>

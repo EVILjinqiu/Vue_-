@@ -93,12 +93,13 @@
 
 <script type="text/ecmascript-6">
   export default {
+    
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import '../../common/stylus/mixins.styl'
-   .profile //我的
+  .profile //我的
     width 100%
     .profile-number
       margin-top 45.5px
@@ -228,7 +229,5 @@
             .icon-jiantou1
               color #bbb
               font-size 10px
-
-
 
 </style>

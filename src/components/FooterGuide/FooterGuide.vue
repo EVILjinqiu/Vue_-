@@ -28,17 +28,19 @@
 </template>
 
 <script type="text/ecmascript-6">
-export default {
-  methods :{
-    goTo(path){
-      this.$router.replace(path)
+  export default {
+    methods: {
+      goTo (path) {
+        
+        this.$router.replace(path)
+      }
     }
   }
-};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-  .footer_guide  
+  @import '../../common/stylus/mixins.styl'
+  .footer_guide  //footer
     top-border-1px(#e4e4e4)
     position fixed
     z-index 100
@@ -65,5 +67,4 @@ export default {
         margin-bottom 2px
         .iconfont
           font-size 22px
-
 </style>
